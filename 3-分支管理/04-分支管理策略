@@ -1,4 +1,9 @@
 <merge ff>
     当被merge的分支history是当前master分支的后代时
     （即被merge的分支被创建后，master分支没有再进行过修改）
+    此时有三种选择
+    1. fast forward
+    [
+        git merge --ff <branch name>
+    ]
 </merge ff>
