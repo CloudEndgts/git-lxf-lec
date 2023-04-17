@@ -1,0 +1,24 @@
+<title>创建一个远程仓库，并与一个本地仓库相关联</title>
+1. 在github创建一个远程仓库
+2. 复制ssh链接，在本地使用命令，关联本地仓库和远程仓库
+    其中origin是远程仓库的名称，为默认叫法（可更改但不推荐）
+[
+    git remote add origin <ssh url>
+]
+#2-1 查看远程仓库信息
+[
+    git remote -v
+]
+#2-2 解除本地仓库与远程仓库的绑定
+[
+    git remote rm <远程仓库名>
+]
+3. 将本地内容推送到远程仓库，
+    -u 参数是第一次推送需要加上的参数，将本地master与远程master关联
+[
+    git push -u origin master
+]
+4. 此后本地做了提交，使用命令进行推送
+[
+    git push origin master
+]

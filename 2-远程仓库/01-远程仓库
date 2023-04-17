@@ -1,0 +1,14 @@
+1. 创建ssh key：ssh-keygen -t rsa -C "youremail@example.com"
+   mac 中创建的ssh位于 ～/.ssh中
+2. 在~/.ssh中新增一个文件config，配置如下：
+    [
+        Host github.com
+            HostName ssh.github.com
+            User git
+            Port 443
+    ]
+3. 把~/.ssh的公钥复制到github中 
+4. 使用此命令连接到github，能成功即可
+    [
+        ssh -T git@github.com
+    ]

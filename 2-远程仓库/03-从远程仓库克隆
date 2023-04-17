@@ -1,0 +1,8 @@
+1. 可能需要先连接github
+[
+    ssh -T git@github.com
+]
+2. 在github仓库的code button下有若干协议的url，ssh最快
+[
+    git clone <repository url>
+]
