@@ -6,4 +6,9 @@
     [
         git merge --ff <branch name>
     ]
+    2. no fast forward，这意味着git在master上创建了一个新的commit来完成merge，
+    被merge分支之前的提交保持独立
+    [
+        git merge --no-ff <branch name>
+    ]
 </merge ff>
