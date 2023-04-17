@@ -5,6 +5,10 @@
     [
         git reset --hard <version number>
     ]
+    <version number>有更取巧的书写方式:
+        HEAD代表当前头部版本
+        HEAD^代表上一个版本
+        HEAD^^代表上两个版本
 </reset>
 <reflog>
     使用此命令来查看自己的每一次命令，可以找回因reset丢失的版本
