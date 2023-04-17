@@ -1,0 +1,14 @@
+<reset>
+    使用此命令将HEAD切换到指定版本，
+    <version number>不用写全，写前几位就行，
+    切换回过去版本时，git log中会失去未来版本
+    [
+        git reset --hard <version number>
+    ]
+</reset>
+<reflog>
+    使用此命令来查看自己的每一次命令，可以找回因reset丢失的版本
+    [
+        git reflog
+    ]
+</reflog>
