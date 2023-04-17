@@ -1,0 +1,10 @@
+<switch>
+    使用此命令切换分支
+    [
+        git switch <branch name>
+    ]
+    使用此命令创建并切换分支
+    [
+        git switch -c <branch name>
+    ]
+</switch>
