@@ -11,8 +11,10 @@
     [
         git merge --no-ff <branch name>
     ]
-    3. squash
+    3. squash，这意味着将<branch name>分支上最新commit的版本同步到master工作区，
+        master需要一个commit才可以在版本库同步<branch name>的最新内容
+        值得注意的是，这种方式的merge无法将master与<branch name>分支的版本链合并
     [
-        git merge -squash <branch name>
+        git merge --squash <branch name>
     ]
 </merge ff>
