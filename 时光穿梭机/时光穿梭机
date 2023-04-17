@@ -1,3 +1,6 @@
 <diff>
     使用此命令查看工作区文件与本地仓库文件的区别
+    [
+        git diff <filename>
+    ]
 </diff>
