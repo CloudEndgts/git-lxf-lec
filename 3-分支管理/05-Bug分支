@@ -1,0 +1,31 @@
+<保存工作区内容>
+    当工作成果尚未足以commit，但是需要切换到其他分支工作的时候，
+    可以使用此指令保存工作区的内容, 再切换到其他分支
+    [
+        git stash
+    ]
+    可以使用此命令查看工作区现场保存记录
+    [
+        git stash list
+    ]
+    当完成其他分支工作的时候，可以使用此命令恢复工作区现场
+    (删除stash)
+    [
+        git stash pop
+    ]
+    当完成其他分支工作的时候，可以使用此命令恢复工作区现场
+    (不删除stash)
+    [
+        git stash apply stash@{<stash version number>}
+    ]
+    删除stash
+    [
+        git stash drop
+    ]
+</保存工作区内容>
+<复制提交更改>
+    使用此命令可以复制一个特定的提交更改到当前分支，并进行一次提交
+    [
+        git cherry-pick <commit version number>
+    ]
+</复制提交更改>
