@@ -24,7 +24,9 @@
     如果有偏离的分支，需要指定调和的方式，
     使用此指令指定git pull进行合并
     [
-        git config pull.rebase false
+        提示：  git config pull.rebase false  # 合并
+        提示：  git config pull.rebase true   # 变基
+        提示：  git config pull.ff only       # 仅快进
     ]
     再使用git pull到本地，手动解决冲突后即可提交
     解决冲突的版本push到远程不会再次因为内容不同引发冲突
