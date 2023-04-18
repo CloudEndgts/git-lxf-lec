@@ -9,6 +9,7 @@
     ]
 3. 把~/.ssh的公钥复制到github中 
 4. 使用此命令连接到github，能成功即可
+    (此命令可能要在 ~/.ssh下才可以成功使用)
     [
         ssh -T git@github.com
     ]
