@@ -1,2 +1,31 @@
-3-07 其他人的修改
-3-07 CloudEnd的修改
+<cautious>可能是最重要的章节</cautious>
+<推送特定分支>
+    使用此命令将特定本地分支推送到远程仓库
+    [
+        git push origin <branch name>
+    ]
+</推送特定分支>
+<创建远程仓库其他分支到本地>
+    默认情况下，clone之后只能看到master分支，如果想看到其他分支，需要使用此命令
+    [
+        git checkout -b <branch name> origin/<branch name>
+    ]
+</创建远程仓库其他分支到本地>
+<将本地更新推送至远程>
+    如果远程仓库有领先于本地仓库的commit，直接使用git push会失败，
+    需要先将远程仓库抓取下来
+    [
+        git pull
+    ]
+    首先需要将远程分支与本地分支做链接，才可以将对应新的commit更新到本地
+    [
+        git branch --set-upstream-to=origin/<branch name> <branch name>
+    ]
+    如果有偏离的分支，需要指定调和的方式，
+    使用此指令指定git pull进行合并
+    [
+        git config pull.rebase false
+    ]
+    再使用git pull到本地，手动解决冲突后即可提交
+    解决冲突的版本push到远程不会再次因为内容不同引发冲突
+</将本地更新推送至远程>
