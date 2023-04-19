@@ -1,0 +1,24 @@
+<打标签>
+    给最新的commit打标签
+    [
+        git tag <tagname>
+    ]
+    给特定commit打标签
+    [
+        git tag <tagname> <commit version number>
+    ]
+    给特定commit打带消息的标签
+    [
+        git tag -a <tagname> -m <message> <commit version number>
+    ]
+</打标签>
+<查看标签>
+    查看所有标签(按字典序)
+    [
+        git tag
+    ]
+    查看特定的标签的版本信息
+    [
+        git show <tagname>
+    ]
+</查看标签>
