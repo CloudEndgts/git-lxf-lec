@@ -1,0 +1,32 @@
+<如何忽略文件>
+    在工作区根目录下创建一个特殊的文件，名称为
+    [
+        .gitignore
+    ]
+    可以写文件名称，也可以写通配符如
+    [
+        *.txt
+    ]
+    把.gitignore提交到git就能产生作用
+</如何忽略文件>
+<忽略文件模版>
+    https://github.com/github/gitignore
+</忽略文件模版>
+<检查规则>
+    使用以下命令，查看指定文件被哪条规则忽略
+    [
+        git check-ignore -v <filename>
+    ]
+</检查规则>
+<强制添加文件>
+    使用此命令无视gitignore，强制add
+    [
+        git add -f <filename>
+    ]
+</强制添加文件>
+<特例>
+    使用此命令为规则制造特例，使得<filename>不被忽略
+    [
+        !<filename>
+    ]
+</特例>

@@ -1,0 +1,25 @@
+<配置别名>
+    为某个git命令配置别名，如
+    [
+        git <command>
+    ]
+    可以进行如下配置，使得别名在当前仓库下有效
+    [
+        git config alias.<abbreviation> <command>
+    ]
+    可以进行如下配置，使得别名在全局有效
+    [
+        git config --global alias.<abbreviation> <command>
+    ]
+</配置别名>
+<配置文件位置>
+    当前仓库配置文件位置
+    [
+        .git/config
+    ]
+    当前用户全局配置位置
+    [
+        ~/.gitconfig
+    ]
+    直接修改配置文件亦可以配置别名
+</配置文件位置>
